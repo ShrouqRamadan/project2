@@ -13,6 +13,20 @@ let  modal=document.querySelector(".modal");
  let xx =document.querySelector(".xx");
  let yy =document.querySelector(".yy");
  let qq=document.querySelector(".qq");
+ let btnlight =document.querySelector(".btn-light");
+ let all =document.querySelector(".alll");
+//  btnlight.onclick=function(){
+//      all.classList.toggle("light");
+//  }
+// let li =()=>{
+//     if(all.classList[0==("")])
+//     // all.classList.toggle('light');
+// // if(btnlight.)
+//     // btnlight.innerHTML=`<button type="button" class="btn btn-dark">Dark</button>`
+//     // btnlight.style.background="black";
+//     // btnlight.classList.toggle=" btn-dark";
+// }
+ 
 
  let oo=()=>{
     alert2.classList.toggle("none");
@@ -37,29 +51,28 @@ let show=()=>{
 }
 btntask.addEventListener("click", show);
 
-// ff.onclick=function(){
-//     zz.classList.add("none")
-// }
-
-// clos2.onclick=function(){
-//     zz.classList.add("none")
-// }
-
 
 
 
 let add =()=>{
     if(input.value.length==0){
-        alert1.classList.remove("none");  
+        alert1.classList.remove("none"); 
+        alert3.classList.add("none"); 
+        alert2.classList.add("none"); 
+         
     }
     else if(input.value.length<3){
-        alert2.classList.remove("none"); 
-        alert1.classList.add("none");  
+        alert2.classList.remove("none");
+        alert1.classList.add("none"); 
+        alert3.classList.add("none"); 
+        input.value="";
+         
      }
      else if(input.value.length>20){
         alert3.classList.remove("none"); 
         alert2.classList.add("none"); 
-        alert1.classList.add("none");  
+        alert1.classList.add("none");
+        input.value="";  
      }
 
 else{
@@ -71,8 +84,10 @@ else{
      let x=input.value;
      ss.innerHTML+= `<div class="alert alert-info dee " role="alert"> 
   ${x} 
-  <button type="button" class="btn btn-danger delete ">Delete</button>
+  <button type="button" class="btn btn-danger delete "><i class="fas fa-trash-alt"></i></button>
    </div>`
+  
+  
    input.value="";
    show();
   
@@ -80,9 +95,14 @@ else{
 }
 
 
+// let nodata = () => {
+//     if(ss.children.length==1){
+//         divalert.classList.remove("none"); 
+//     }
+// }
 let nodata = () => {
-    if(ss.children.length==1){
-        divalert.classList.remove("none"); 
+    if(ss.childElementCount==1){
+        document.querySelector("#divalert").style.display="block";
     }
 }
 
@@ -100,8 +120,9 @@ document.addEventListener('click',function(t) {
     if(t.target.classList.contains('dee'))
     {
         t.target.classList.toggle("touch");
+        bghcgcfgbvghbn
 
-        
+        nodata();
         
         
     }
@@ -114,4 +135,4 @@ document.addEventListener('click',function(t) {
 
 
 btnadd.addEventListener('click', add)
-console.dir(document.querySelector(".ss"));
+// console.dir(document.querySelector(".ss"));

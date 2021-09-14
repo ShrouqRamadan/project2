@@ -23,3 +23,16 @@ body{
         background-color: gray;
         text-decoration:line-through;
     }
+    
+
+    .alll{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+
+    }
+    .light{
+        background-color: white;
+        color:black;
+    }
