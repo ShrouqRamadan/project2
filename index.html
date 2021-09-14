@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+ <h1 class="text-center display-4">welcome to project two</h1>
+ <button type="button" class="btn btn-primary btn-lg btn-block mt-5 btntask col-6">Add Task From Here</button>
+
+<div class=" modal " tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close ff"  onclick="show()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class=" container col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label style="font-weight: 500;" class="text-center ">add new task</label>
+                            <input class="form-control form-control-lg" id="input" type="text" placeholder="task">
+                            <!-- alarm -->
+                            <div class="alert alert-danger none  " id="alert1" role="alert">
+                               Enter a Valid data!
+                                <button type="button" class="close xx"   aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="alert alert-danger none" id="alert2" role="alert">
+                                More than 2 Letters!
+                                <button type="button" class="close yy" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="alert alert-danger none" id="alert3" role="alert">
+                                Less than 20 Letters!
+                                <button type="button" class="close qq" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <!-- end -->
+                            <button class="btn btn-info mt-3" id="btnadd"> new task</button>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="show()" class="btn btn-secondary  clos2" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+<!-- end alert -->
+<div class=" container col-6  mt-5 ">
+    <div class="card  "  >
+        <div class="card-body ss" >
+            <div class="alert alert-danger text-center  " id="divalert" role="alert">
+                NO Data Added Yet
+              </div>
+
+</div>
+</div>
+
+
+
+
+
+    <script src="./js/js.js"></script>
+</body>
+</html>

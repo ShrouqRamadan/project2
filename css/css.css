@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+}
+.card{
+    background-color: gray;
+}
+.none{
+    display: none;
+}
+.delete
+{
+    margin-left: 80%;
+   
+}
+.btntask {
+    margin: auto;
+    }
+    .block{
+        display: block;
+    }
+    .touch{
+        background-color: gray;
+        text-decoration:line-through;
+    }
